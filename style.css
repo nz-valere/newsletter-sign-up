@@ -20,6 +20,10 @@ padding-top: 30px;
     margin-bottom: 20px;
 
 }
+.xr{
+    height: 100%;
+    width: auto;
+}
 .form{
     display: flex;
     flex-direction: column;
@@ -48,8 +52,7 @@ li::marker{
     transition: 0.3s;
 }
 #btn:hover ,#btn1:hover{
-    /* background-color: hsl(4, 44%, 39%); */
-    box-shadow: -3px 5px 2px hsla(4, 100%, 67%, 0.178) ;
+    background-color:  hsl(4, 100%, 67%);
 }
 #btn1{
     background-color: hsl(234, 29%, 20%);
@@ -67,10 +70,18 @@ input{
     height: 35px;
     width: 25em;
     border-radius: 10px;
+    border: solid 1px coral;
 }
-/* input:invalid{
-    
-} */
+.error {
+    /* border: solid 1px coral; */
+    background-color: hsla(4, 100%, 67%, 0.543);
+    width: 25em;
+  }
+#err{
+    color: red;
+    display: none;
+    font-size: 10px;
+}
 .msg{
 
     background-color: white;
