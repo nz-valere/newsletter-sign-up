@@ -48,7 +48,7 @@ li::marker{
     transition: 0.3s;
 }
 #btn:hover ,#btn1:hover{
-    background-color: hsl(4, 100%, 67%);
+    /* background-color: hsl(4, 44%, 39%); */
     box-shadow: -3px 5px 2px hsla(4, 100%, 67%, 0.178) ;
 }
 #btn1{
@@ -67,8 +67,10 @@ input{
     height: 35px;
     width: 25em;
     border-radius: 10px;
-    border: .5px solid hsl(4, 100%, 67%);
 }
+/* input:invalid{
+    
+} */
 .msg{
 
     background-color: white;
@@ -80,8 +82,15 @@ input{
     font-size: smaller;
     text-align: start;
 }
-@media (max-width: 1024px) {
+
+@media (min-width: 413px) {
+    .xs{
+        display: none;
+    }
+}
+@media (max-width: 412px) {
     body{
+        background-color: white;
         padding: 0;
         margin: 0;
     }
@@ -89,15 +98,23 @@ input{
         width: 100%;
         height: 98vh;
         margin: 0;
+        padding: 0;
     }
     .msg{display: flex;
         flex-direction: column;
         justify-content: space-between
     }
-    .xs{
-        display: ;
-    }
     .xr{
         display: none;
+    }
+    .xs{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+        padding: 0;
+    }
+    .qw{
+        margin-left: 20px;
     }
 }
